@@ -6,19 +6,77 @@
     <title>My birthday</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/logo.png" alt="logo party">
             <p class="hero__text">
-                A festa mais esperada do ano começa em 30d 17h 20min 56s
+                A festa mais esperada do ano começa em <br>
+                <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Aqui na minha casa
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Data</b>
+                        12/05/2024
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Horário</b>
+                        A partir das 20h
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
         </div>
-
     </header>
-    <script src="scripts/main.js"></script>
+    <section class="event event--diversao">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Muita diversão</h2>
+                <p class="event__details__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aspernatur quia corrupti consequatur officia vitae, ipsam autem impedit ea sunt delectus repudiandae debitis, quisquam, deleniti amet asperiores aliquid dignissimos minus.</p>
+            </div>
+            <img class="event__image" src="./images/fun.png" alt="pessoas dançando">
+        </div>
+    </section>
+    <section class="event event--comida event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Muita comida boa</h2>
+                <p class="event__details__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aspernatur quia corrupti consequatur officia vitae, ipsam autem impedit ea sunt delectus repudiandae debitis, quisquam, deleniti amet asperiores aliquid dignissimos minus.</p>
+            </div>
+            <img class="event__image" src="./images/food.png" alt="mulher com rosquinha no olho">
+        </div>
+    </section>
+    <section class="event event--drinks">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Muitos drinks</h2>
+                <p class="event__details__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aspernatur quia corrupti consequatur officia vitae, ipsam autem impedit ea sunt delectus repudiandae debitis, quisquam, deleniti amet asperiores aliquid dignissimos minus.</p>
+            </div>
+            <img class="event__image" src="./images/drink.png" alt="duas mãos brindando">
+        </div>
+    </section>
+    <section class="event event--amigos event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Muitos amigos</h2>
+                <p class="event__details__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aspernatur quia corrupti consequatur officia vitae, ipsam autem impedit ea sunt delectus repudiandae debitis, quisquam, deleniti amet asperiores aliquid dignissimos minus.</p>
+            </div>
+            <img class="event__image" src="./images/people.png" alt="idosos dançando">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../src/scripts/main.js"></script>
 </body>
 </html>
